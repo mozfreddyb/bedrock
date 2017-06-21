@@ -25,7 +25,7 @@
     {{ high_res_img('firefox/products/android/btn-google-play.png', {'alt': _('Get it on Google Play'), 'width': '190', 'height': '57'}) }}
   </a>
   {% else %}
-    {{ google_play_button(class_name='dl-button') }}
+    {{ google_play_button(class_name='dl-button', anchor_attributes={'data-download-location': 'primary cta'}) }}
   {% endif %}
 {% endblock %}
 
